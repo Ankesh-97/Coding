@@ -1,0 +1,19 @@
+ 
+ //Powers of 3
+ public ArrayList<Integer> solve(int A) {
+        
+        ArrayList<Integer> list = new ArrayList<>();
+        int f = 1;
+        while(A>0){
+           
+           int r = A%3;
+           while(r-->0){
+               list.add(f);
+           }
+           f = f*3;
+           A=A/3;
+            
+        }
+        return list;
+    }
+}
